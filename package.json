@@ -1,0 +1,24 @@
+{
+  "name": "claude-chatbot",
+  "version": "1.0.0",
+  "description": "Chatbot usando la API de Claude",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "build": "cd client && npm install && npm run build",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\""
+  },
+  "keywords": [
+    "claude",
+    "chatbot",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
